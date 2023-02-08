@@ -4,13 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- ======================================= -->
-  <!-- =====         GOOGLE FONTS         ==== -->
-  <!-- ======================================= -->
-
-
-
+  <title>Shortly</title>
   <!-- =============================== -->
   <!-- =====       STYLES        ===== -->
   <!-- =============================== -->
@@ -18,14 +12,62 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header"></header>
-
-
-<!-- ******************************************* -->
-<!-- *****          MAIN SECTION           ***** -->
-<!-- ******************************************* -->
-<main class="main-content"></main>
-
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a href="#" class="site-header__logo logo">
+        <img src="img/logo.svg" alt="shortly-logo" class="logo__img" width="120" height="33">
+      </a>
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav__link" href="#">Features</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#">Pricing</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#">Resources</a></li>
+        </ul>
+      </nav>
+      <button class="button" type="button">login</button>
+      <button class="button button-blue button-signup" type="button">sign up</button>
+    </div>
+  </header>
+  <!-- **************************** -->
+  <!-- *****   MAIN SECTION   ***** -->
+  <!-- **************************** -->
+  <main class="main-content">
+    <div class="hero">
+      <div class="hero__container container">
+        <h1 class="hero__heading">More than just shorter links</h1>
+        <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+        <button class="button button-blue button-no-corner">Get Started</button>
+      </div>
+    </div>
+    <!-- * * FEATURES * * -->
+    <div class="feature">
+      <div class="feature__container container">
+        <h2 class="feature__heading">Advanced Statistics</h2>
+        <p class="feature__text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        <ul class="feature-list">
+          <!-- = = = item 1 = = = -->
+          <li class="feature-list__item">
+            <h3 class="feature-list__title">Brand Recognition</h3>
+            <p class="feature-list__text">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+            <img class="feature-list__img" src="img/circle.svg" alt="">
+          </li>
+          <!-- = = = item 2 = = = -->
+          <li class="feature-list__item feature-list__item--2">
+            <h3 class="feature-list__title">Detailed Records</h3>
+            <p class="feature-list__text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+            <img class="feature-list__img" src="img/circle.svg" alt="">
+          </li>
+          <!-- = = = item 3 = = = -->
+          <li class="feature-list__item feature-list__item--3">
+            <h3 class="feature-list__title">Fully Customizable</h3>
+            <p class="feature-list__text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+            <img class="feature-list__img" src="img/circle.svg" alt="">
+          </li>
+          <hr class="line-blue">
+        </ul>
+      </div>
+    </div>
+  </main>
   <script src="js/main.js"></script>
 </body>
 </html>
