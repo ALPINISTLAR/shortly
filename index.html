@@ -15,17 +15,20 @@
   <header class="site-header">
     <div class="site-header__container container">
       <a href="#" class="site-header__logo logo">
-        <img src="img/logo.svg" alt="shortly-logo" class="logo__img" width="120" height="33">
+        <img class="logo__img" src="img/logo.svg" alt="shortly-logo" width="120" height="33">
       </a>
-      <nav class="sitenav">
+      <nav class="site-header__sitenav sitenav">
         <ul class="sitenav__list">
           <li class="sitenav__item"><a class="sitenav__link" href="#">Features</a></li>
           <li class="sitenav__item"><a class="sitenav__link" href="#">Pricing</a></li>
           <li class="sitenav__item"><a class="sitenav__link" href="#">Resources</a></li>
         </ul>
       </nav>
-      <button class="button" type="button">login</button>
-      <button class="button button-blue button-signup" type="button">sign up</button>
+      <!-- * * AUTHORIZATION * * -->
+      <div class="site-header__auth">
+        <a class="site-header__login-link" href="#">login</a>
+        <a class="button button--small" href="#">sign up</a>
+      </div>
     </div>
   </header>
   <!-- **************************** -->
@@ -42,6 +45,19 @@
     <!-- * * FEATURES * * -->
     <div class="feature">
       <div class="feature__container container">
+        <!-- URL SHORTENER FORM -->
+        <div class="feature__url-shortener">
+          <div class="url-shortener">
+            <h2 class="visually-hidden">Url Shortener</h2>
+            <form class="url-shortener__form" action="https://echo.htmlacademy.ru" method="post">
+           <div class="url-shortener__input-wrapper">
+            <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..." aria-label="URL input" required>
+            <div class="url-shortener__error-msg">Please add a link</div>
+           </div>
+           <button class="button button-blue" type="submit">Shorten It!</button>
+            </form>
+          </div>
+        </div>
         <h2 class="feature__heading">Advanced Statistics</h2>
         <p class="feature__text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
         <ul class="feature-list">
