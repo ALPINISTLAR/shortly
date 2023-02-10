@@ -214,34 +214,34 @@ img
   color: var(--text-color-active);
 }
 /* * HERO * */
-.hero__container {
+.hero {
+  padding-top: 92px;
+  padding-bottom: 222px;
   background-image: url(../img/working_with_computer.svg);
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: top 78px left calc(50% + 350px);
-  padding-top: 146px;
-  padding-bottom: 222px;
+  background-position: top 30px left calc(50% + 476px);
 }
-.hero__heading {
-  width: 565px;
+.hero__inner {
+  max-width: 565px;
+}
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 5px;
   font-size: 80px;
-  font-weight: 700;
   line-height: 90px;
   letter-spacing: -2px;
-  text-align: left;
-  color: var(--title-color);
-  margin-bottom: 5px;
+  color: var(--text-color-dark);
 }
 .hero__text {
-  width: 540px;
   font-size: 22px;
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 0.15px;
-  text-align: left;
   color: var(--text-color);
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
+
+
 /* * * FEATURE * * */
 .feature {
   padding-bottom: 120px;
