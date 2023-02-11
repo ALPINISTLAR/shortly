@@ -14,7 +14,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__container container">
-      <a href="#" class="site-header__logo logo">
+      <a href="index.html" class="site-header__logo logo">
         <img class="logo__img" src="img/logo.svg" alt="shortly-logo" width="120" height="33">
       </a>
       <nav class="site-header__sitenav sitenav">
@@ -51,13 +51,34 @@
         <div class="feature__url-shortener">
           <div class="url-shortener">
             <h2 class="visually-hidden">Url Shortener</h2>
-            <form class="url-shortener__form" action="https://echo.htmlacademy.ru" method="post">
-           <div class="url-shortener__input-wrapper">
-            <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..." aria-label="URL input" required>
-            <div class="url-shortener__error-msg">Please add a link</div>
-           </div>
-           <button class="button button-blue" type="submit">Shorten It!</button>
+            <form class="url-shortener__form js-url-shortener-form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="url-shortener__input-wrapper">
+                <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..." aria-label="URL input" required>
+                <div class="url-shortener__error-msg">Please add a link</div>
+              </div>
+              <button class="button button--big button--rectangle-big" type="submit">Shorten It!</button>
             </form>
+            <!-- * * / URL SHORTENER RESULTS \ * *  -->
+            <div class="url-shortener__results">
+              <!-- = = = / 1 \ = = = -->
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://www.frontendmentor.io</div>
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/k4lKyk</a>
+                <button class="url-shortener__copy-button button button--small button--rectangle">Copy</button>
+              </div>
+              <!-- = = = / 2 \ = = = -->
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://twitter.com/frontendmentor</div>
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/gxOXp9</a>
+                <button class="url-shortener__copy-button button button--small button--rectangle">Copy</button>
+              </div>
+              <!-- = = = / 3 \ = = = -->
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://www.linkedin.com/company/frontend-mentor</div>
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/gob3X9</a>
+                <button class="url-shortener__copy-button button button--small button--rectangle">Copy</button>
+              </div>
+            </div>
           </div>
         </div>
         <h2 class="feature__heading">Advanced Statistics</h2>
