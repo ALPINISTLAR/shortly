@@ -262,7 +262,6 @@ select:-webkit-autofill:focus {
 
 /* * * FEATURE * * */
 .index-url-shortener-form-features-wrapper {
-  padding-bottom: 120px;
   background-color: var(--background-color);
 }
 .index-url-shortener {
@@ -466,4 +465,31 @@ select:-webkit-autofill:focus {
   margin: 0;
   top: 152px;
   z-index: 0;
+}
+
+/* * * CTA * * */
+.cta {
+  padding-top: 57px;
+  padding-bottom: 57px;
+  background-color: #4B3F6B;
+  background-image: url(../img/cta-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.cta__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  text-transform: capitalize;
 }
