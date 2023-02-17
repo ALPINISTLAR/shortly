@@ -478,7 +478,7 @@ select:-webkit-autofill:focus {
 
 /* * * * * / SITE FOOTER \ * * * * */
 .site-footer {
-  background-color: #232127;
+  background-color: var(--background-dark);
   padding-top: 71px;
   padding-bottom: 71px;
 }
@@ -489,22 +489,23 @@ select:-webkit-autofill:focus {
 .site-footer__logo {
   display: flex;
   color: #fff;
-  margin-right: 260px;
+  margin-right: 30px;
 }
 .site-footer__logo:hover{
   color: var(--accent-color);
 }
 .site-footer__menus {
-  max-width: 460px;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-right: auto;
+  margin-right: 100px;
+  margin-left: auto;
 }
 .site-footer__menus-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.site-footer__menus-list:not(:last-child){
+  margin-right: 90px;
 }
 .footer-list {
   color: #fff;
@@ -537,10 +538,14 @@ select:-webkit-autofill:focus {
 .footer-socials__item:not(:last-child) {
   margin-right: 24px;
 }
-.footer-social_link{
+.footer-socials_link{
   display: flex;
   color: #fff;
 }
-.footer-social_link:hover {
+.footer-socials_link:hover {
   color: var(--accent-color);
+}
+.footer-socials__icon{
+  width: 24px;
+  object-fit: contain;
 }
