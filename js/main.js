@@ -1,6 +1,10 @@
 const elUrlShortener = document.querySelector('.url-shortener');
 const elUrlShortenerForm = document.querySelector('.js-url-shortener-form');
 const elUrlShortenerResults = document.querySelector('.url-shortener__results');
+const elSitenavOpener = document.querySelector('.sitenav-opener');
+const elSitenavAuthWrapper = document.querySelector('.site-header-mobile__sitenav-auth-wrapper');
+
+
 
 if (elUrlShortenerForm) {
   elUrlShortenerForm.addEventListener('submit', function (evt) {
@@ -26,4 +30,14 @@ if (elUrlShortener) {
       }, 1000);
     }
   });
+}
+
+if (elSitenavOpener) {
+  elSitenavOpener.addEventListener('click', function () {
+    elSitenavAuthWrapper.classList.toggle('site-header-mobile__sitenav-auth-wrapper-open');
+    elSitenavOpener.classList.toggle('sitenav-opener-open');
+    setTimeout(function () {
+      elSitenavAuthWrapper.classList.toggle('site-header-mobile__sitenav-auth-wrapper-open-opacity');
+    }, 10);
+  })
 }
