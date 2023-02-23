@@ -588,7 +588,7 @@ select:-webkit-autofill:focus {
   transition: transform 0.4s ease;
 }
 .sitenav-opener:focus{
-outline-color: transparent;
+  outline-color: transparent;
 }
 .sitenav-opener-open{
   transform: rotate(-90deg);
