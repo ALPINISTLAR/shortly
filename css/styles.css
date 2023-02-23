@@ -539,11 +539,11 @@ select:-webkit-autofill:focus {
 .footer-socials__item:not(:last-child) {
   margin-right: 24px;
 }
-.footer-socials_link{
+.footer-socials__link{
   display: flex;
   color: #fff;
 }
-.footer-socials_link:hover {
+.footer-socials__link:hover {
   color: var(--accent-color);
 }
 .footer-socials__icon{
