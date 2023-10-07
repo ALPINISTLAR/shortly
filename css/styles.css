@@ -264,7 +264,7 @@ select:-webkit-autofill:focus {
   background-color: var(--background-color);
 }
 .index-url-shortener {
-  margin-top: -84px;
+  transform: translateY(-84px);
 }
 .url-shortener__form {
   display: flex;
